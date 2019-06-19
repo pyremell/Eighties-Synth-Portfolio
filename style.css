@@ -24,7 +24,7 @@ body {
 
 #gridBG {
   position: fixed;
-  bottom: 0;
+  bottom: 1;
   min-width: 100%;
   min-height: 100%;
 }
@@ -41,6 +41,7 @@ body {
 .header-content {
   z-index: 2;
   color: #f1f1f1;
+  margin-top: 100px;
 }
 
 /* Section Styles */
@@ -58,14 +59,12 @@ body {
 
 .section-a {
   background: #fff;
-  opacity: 0.80;
   position: relative;
-  margin: 100px auto 0;
+  margin: 300px auto 0;
 }
 
 .section-b {
-  background: rgb(255, 252, 60);
-  opacity: 0.80;
+  background: rgb(223, 221, 150);
   position: relative;
 }
 
