@@ -64,6 +64,8 @@ body {
 }
 
 .section-b {
+  background: rgb(255, 252, 60);
+  opacity: 0.80;
   position: relative;
 }
 
