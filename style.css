@@ -6,11 +6,15 @@
 
 body {
   margin: 0;
-  font-family: 'Orbitron', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   color: #333;
   overflow-x: hidden;
+}
+
+body,
+button {
+  font-family: 'Orbitron', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Header Styles */
@@ -64,13 +68,13 @@ body {
 }
 
 .button {
-  display: block;
-  color: white;
   border-radius: 4px;
   border: none;
-  padding: 10px 20px;
+  color: white;
+  padding: 6px 14px;
   cursor: pointer;
   font-family: inherit;
+  font-size: 12px;
 }
 
 .tweet,
@@ -80,28 +84,14 @@ body {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 800px) {
-  .button {
-    border-radius: 4px;
-    border: none;
-    padding: 6px 14px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 12px;
-  }
-
-  .quote-text {
-    font-size: 18px;
-  }
-}
-
-
 /* Section Styles */
+  /* Sections - Base Styles */
 .section {
-  
+  position: relative;
 }
 
-.section-content {
+.section-content,
+.section-header {
   width: 100%;
   padding: 20px 40px;
   max-width: 960px;
@@ -111,15 +101,72 @@ body {
 
 .section-a {
   background: #fff;
-  position: relative;
   margin: 300px auto 0;
 }
 
 .section-b {
-  background: rgb(223, 221, 150);
-  position: relative;
+  background-image: linear-gradient(to bottom right, #162e41, #7e31b0);
+  opacity: 0.9;
+  color: #fff;
 }
 
-.container {
-  
+.section-c {
+  background: #fff;
+}
+  /* Section - Buttons */
+.collapsible {
+  background-color: #ccc;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.section-b button {
+  background: rgba(0,0,0,0);
+  color: #fff;
+}
+
+  /* Section - Collapsible Content */
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Footer */
+footer {
+  padding: 30px 20px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+  /* Random Quote Generator - Fullscreen */
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 12px 24px;
+    font-family: inherit;
+  }
+
+  /* Collapsible Sections - Fullscreen */
+  .collapsible {
+    background-color: #fff;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .section-b button:hover {
+    background-image: linear-gradient(to bottom right,  #162e41, #7e31b0);
+  }
 }

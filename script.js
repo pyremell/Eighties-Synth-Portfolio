@@ -1,3 +1,4 @@
+// Random Quote Generator
 const endpoint = 'http://movie-quotes-app.herokuapp.com/api/v1/quotes?category=sci-fi';
 
 function getQuote() {
@@ -25,3 +26,19 @@ const newQuoteButton = document.querySelector('.new-quote');
 newQuoteButton.addEventListener('click', getQuote);
 
 getQuote();
+
+// Collapsible Content
+let coll = document.getElementsByClassName('collapsible');
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+    let content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
