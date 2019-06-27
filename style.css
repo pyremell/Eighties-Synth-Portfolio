@@ -48,6 +48,26 @@ button {
   margin-top: 100px;
 }
 
+/* Neon Logo & Headers */
+.logo {
+  font-size: 3em;
+  line-height: 1.1;
+  text-align: center;
+  padding: 2rem;
+  
+}
+
+.logo,
+h1 {
+  background: -webkit-linear-gradient(118.96944726815866deg, rgba(86, 216, 228,1) 16.0015362968068%,rgba(255, 255, 255,1) 42.43445612221457%,rgb(172, 92, 209) 69.81140879852975%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  /* text-shadow: 0 0 30px rgba(86, 216, 228,0.4), */
+               0 0 100px rgba(255,0,84,0.2),
+               0 0 90px rgba(159, 1, 234,0.1);
+}
+
 /* Random Quote Generator */
 .quotes {
   padding: 20px 50px;
@@ -100,23 +120,22 @@ button {
 }
 
 .section-a {
-  background: #fff;
   margin: 300px auto 0;
 }
 
 .section-b {
   background-image: linear-gradient(to bottom right, #162e41, #7e31b0);
-  opacity: 0.9;
   color: #fff;
 }
 
+.section-a,
 .section-c {
-  background: #fff;
+  background: rgb(75, 131, 196, 1);
 }
   /* Section - Buttons */
 .collapsible {
-  background-color: #ccc;
-  color: #444;
+  background-color: rgb(113, 146, 184);
+  color: #fee;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -127,7 +146,7 @@ button {
 }
 
 .section-b button {
-  background: rgba(0,0,0,0);
+  background: rgba(117, 117, 117, 0);
   color: #fff;
 }
 
@@ -158,12 +177,12 @@ footer {
 
   /* Collapsible Sections - Fullscreen */
   .collapsible {
-    background-color: #fff;
+    background-color: rgb(131, 177, 230, 0);
   }
 
   .active,
   .collapsible:hover {
-    background-color: #ccc;
+    background-color: rgb(131, 177, 230, 0.5);
   }
 
   .section-b button:hover {
