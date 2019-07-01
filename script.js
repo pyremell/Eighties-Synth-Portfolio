@@ -1,5 +1,5 @@
 // Random Quote Generator
-const endpoint = "http://movie-quotes-app.herokuapp.com/api/v1/quotes?category=sci-fi/token=3hn69pl6vfm6MoT8fG5vlgtt";
+const endpoint = "http://movie-quotes-app.herokuapp.com/api/v1/quotes?category=sci-fi/";
 
 function getQuote() {
   fetch(endpoint)

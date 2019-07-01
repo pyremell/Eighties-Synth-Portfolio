@@ -92,6 +92,7 @@ h1 {
   border: none;
   color: white;
   padding: 6px 14px;
+  width: 120px;
   cursor: pointer;
   font-family: inherit;
   font-size: 12px;
@@ -120,7 +121,7 @@ h1 {
 }
 
 .section-a {
-  margin: 300px auto 0;
+  margin: 100px auto 0;
 }
 
 .section-b {
@@ -159,7 +160,18 @@ h1 {
 
 /* Footer */
 footer {
-  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  position: relative;
+  background-color: #162e41;
+  font-size: 0.75rem;
+}
+
+footer span a {
+  text-decoration: none;
+  color: #fee;
+  padding: 15px;
 }
 
 /* Media Queries */
@@ -173,6 +185,7 @@ footer {
   .button {
     padding: 12px 24px;
     font-family: inherit;
+    width: 140px;
   }
 
   /* Collapsible Sections - Fullscreen */
@@ -187,5 +200,15 @@ footer {
 
   .section-b button:hover {
     background-image: linear-gradient(to bottom right,  #162e41, #7e31b0);
+  }
+
+  /* Footer - Fullscreen */
+  footer {
+    font-size: 1.2rem;
+  }
+
+  footer span a:hover {
+    background-color: #225470;
+    border-radius: 4px;
   }
 }
