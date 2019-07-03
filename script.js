@@ -1,4 +1,4 @@
-// Random Quote Generator
+// Random Quote Generator (API edition)
 const endpoint = "http://movie-quotes-app.herokuapp.com/api/v1/quotes?category=sci-fi/";
 
 function getQuote() {
