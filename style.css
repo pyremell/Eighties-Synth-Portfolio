@@ -8,7 +8,6 @@ body {
   margin: 0;
   font-size: 1rem;
   line-height: 1.8;
-  color: #333;
   overflow-x: hidden;
 }
 
@@ -54,16 +53,16 @@ button {
   line-height: 1.1;
   text-align: center;
   padding: 2rem;
-  
+  margin-top: 0;
 }
 
 .logo,
 h1 {
-  background: -webkit-linear-gradient(118.96944726815866deg, rgba(86, 216, 228,1) 16.0015362968068%,rgba(255, 255, 255,1) 42.43445612221457%,rgb(172, 92, 209) 69.81140879852975%);
+  background: -webkit-linear-gradient( rgba(86, 216, 228,1) 16.0015362968068%,rgba(255, 255, 255,1) 42.43445612221457%,rgb(172, 92, 209) 69.81140879852975%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  /* text-shadow: 0 0 30px rgba(86, 216, 228,0.4), */
+  text-shadow: 0 0 30px rgba(86, 216, 228,0.4),
                0 0 100px rgba(255,0,84,0.2),
                0 0 90px rgba(159, 1, 234,0.1);
 }
@@ -80,14 +79,18 @@ h1 {
 
 .controls {
   position: relative;
-  bottom: 1;
+  /* bottom: 1; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
 }
 
-.button {
+.tweet,
+.new-quote {
+  background-color: #8c4ab3;
+  text-decoration: none;
+  opacity: 0.8;
   border-radius: 4px;
   border: none;
   color: white;
@@ -96,13 +99,6 @@ h1 {
   cursor: pointer;
   font-family: inherit;
   font-size: 12px;
-}
-
-.tweet,
-.new-quote {
-  background-color: #8c4ab3;
-  text-decoration: none;
-  opacity: 0.6;
 }
 
 /* Section Styles */
@@ -118,6 +114,7 @@ h1 {
   max-width: 960px;
   margin: auto;
   text-align: center;
+  color: #fee;
 }
 
 .section-a {
@@ -126,12 +123,11 @@ h1 {
 
 .section-b {
   background-image: linear-gradient(to bottom right, #162e41, #7e31b0);
-  color: #fff;
 }
 
 .section-a,
 .section-c {
-  background: rgb(75, 131, 196, 1);
+  background: #1e3d57;
 }
   /* Section - Buttons */
 .collapsible {
@@ -148,7 +144,6 @@ h1 {
 
 .section-b button {
   background: rgba(117, 117, 117, 0);
-  color: #fff;
 }
 
   /* Section - Collapsible Content */
@@ -164,7 +159,7 @@ footer {
   justify-content: space-around;
   padding: 60px 20px;
   position: relative;
-  background-color: #162e41;
+  background-color: rgb(59, 103, 153);
   font-size: 0.75rem;
 }
 
@@ -182,10 +177,30 @@ footer span a {
     font-size: 18px;
   }
 
-  .button {
+  .tweet,
+  .new-quote {
     padding: 12px 24px;
     font-family: inherit;
     width: 140px;
+  }
+
+  .tweet:hover,
+  .new-quote:hover {
+  opacity: 1;
+}
+
+
+  /* Logo and h1's */
+  .logo {
+    font-size: 6em;
+  }
+
+  .logo,
+  h1 {
+    background: -webkit-linear-gradient( rgba(86, 216, 228,1) 46%,rgba(255, 255, 255,1) 20%,rgb(172, 92, 209) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
   }
 
   /* Collapsible Sections - Fullscreen */
@@ -195,11 +210,7 @@ footer span a {
 
   .active,
   .collapsible:hover {
-    background-color: rgb(131, 177, 230, 0.5);
-  }
-
-  .section-b button:hover {
-    background-image: linear-gradient(to bottom right,  #162e41, #7e31b0);
+    background-color: rgb(59, 103, 153);
   }
 
   /* Footer - Fullscreen */
@@ -208,7 +219,7 @@ footer span a {
   }
 
   footer span a:hover {
-    background-color: #225470;
+    background-color:#1e3d57;
     border-radius: 4px;
   }
 }
