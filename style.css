@@ -118,13 +118,14 @@ h1 {
 
 .section-a {
   margin: 100px auto 0;
+  padding-top: 120px;
+  background: linear-gradient(rgba(30, 61, 87, 0), rgba(30, 61, 87, 0.5), rgba(30, 61, 87, 1), rgba(30, 61, 87, 1), rgba(30, 61, 87, 1), rgba(30, 61, 87, 1));
 }
 
 .section-b {
   background-image: linear-gradient(to bottom right, #162e41, #7e31b0);
 }
 
-.section-a,
 .section-c {
   background: #1e3d57;
 }
@@ -157,7 +158,7 @@ footer,
 .credits {
   display: flex;
   justify-content: space-evenly;
-  padding: 60px 20px;
+  padding: 60px 20px 12px;
   position: relative;
   background-color: rgb(59, 103, 153);
   font-size: 0.75rem;
