@@ -142,10 +142,6 @@ h1, h2, h3 {
   font-size: 15px;
 }
 
-.section-b button {
-  background: rgba(117, 117, 117, 0);
-}
-
 /* Section - Collapsible Content */
 .collapsible-content {
   max-height: 0;
