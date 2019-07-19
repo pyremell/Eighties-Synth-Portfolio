@@ -153,6 +153,21 @@ h1, h2, h3 {
   transition: max-height 0.2s ease-out;
 }
 
+/* Section A */
+.profile-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+
+.skills {
+  font-size: 0.8em;
+  list-style-type: none;
+  text-align: left;
+}
+
 /* Section B */
 .code-samples {
   display: flex;
@@ -252,6 +267,15 @@ footer span a,
 
   .code-samples a {
     flex: 0 0 40%;
+  }
+
+  .profile-data {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+
+  .skills {
+    font-size: 0.7em;
   }
 
   /* Footer - Fullscreen */
