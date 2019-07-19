@@ -69,3 +69,5 @@ for (let i = 0; i < coll.length; i++) {
     }
   });
 }
+
+// Typewriter Effect
