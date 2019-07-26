@@ -86,7 +86,8 @@ h1, h2, h3 {
 }
 
 .tweet,
-.new-quote {
+.new-quote,
+.email {
   background-color: #8c4ab3;
   text-decoration: none;
   opacity: 0.8;
@@ -179,6 +180,15 @@ h1, h2, h3 {
 .code-samples img {
   width: 100%;
   border-radius: 20px;
+}
+
+/* Section C - Special Mission Recruitment (Contact Me) */
+.section-c {
+  padding-bottom: 40px;
+}
+
+.email {
+  padding: 15px 20px;
 }
 
 /* Footer */
