@@ -7,16 +7,14 @@ function newQuote() {
   document.getElementById('quote-text').innerHTML = quotes[randomNumber];
 }
 
-newQuote();
-
 function tweetQuote() {
   let currentQuote = document.getElementById('quote-text').textContent;
 
   let tweetButton = document.querySelector('.tweet');
-  tweetButton.setAttribute('href', `https://twitter.com/intent/tweet?text=${currentQuote}`).addEventListener('click');
+  tweetButton.setAttribute('href', `https://twitter.com/intent/tweet?text=${currentQuote}`);
   }
 
-tweetQuote();
+  newQuote();
   
 // Collapsible Content
 let coll = document.getElementsByClassName('collapsible');
@@ -33,3 +31,4 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 
+tweetQuote();
