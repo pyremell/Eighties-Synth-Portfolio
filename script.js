@@ -7,16 +7,14 @@ function newQuote() {
   document.getElementById('quote-text').innerHTML = quotes[randomNumber];
 }
 
-
+newQuote();
 
 function tweetQuote() {
   let currentQuote = document.getElementById('quote-text').textContent;
 
   let tweetButton = document.querySelector('.tweet');
-  tweetButton.setAttribute('href', `https://twitter.com/share?text=${currentQuote}`).addEventListener('click');
+  tweetButton.setAttribute('href', `https://twitter.com/intent/tweet?text=${currentQuote}`).addEventListener('click');
   }
-
-newQuote();
 
 tweetQuote();
   
