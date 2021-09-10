@@ -162,7 +162,7 @@ h1, h2, h3 {
 .skills {
   font-size: 0.8em;
   list-style-type: none;
-  text-align: left;
+/*   text-align: left; */
 }
 
 /* Section B */
